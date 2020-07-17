@@ -1,0 +1,89 @@
+    <%- include ( './partials/header'); %>
+    <link rel="stylesheet" href="css/style.css">
+    <%- include ('./partials/css-global'); %>
+</head>
+<body>
+     <!-- Header consist of navbar and button.The button will appear on mobile device only (max-width 660px) to present hamburger menue -->
+  <header>
+       <nav class ="navigation">
+        <ul>
+          <li ><a href="/" class="active">Home</a></li>
+          <li><a href="/#destination">Destination</a></li>
+          <li><a href="/#contact">Contact Us</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Sign Up</a></li>
+        </ul>
+        <button id="toggle"><i class="fas fa-bars"></i></button>
+      </nav> 
+  </header>
+
+<!-- *** There are few section in main body :  1. Hero section: picture with logo and ability to register to the services 
+  ****** 2. In class DESCRIPTION  there is a little bit information about our company and CONTACT information 
+  ****** 3. FORM to contact us if needed. Email/ full name and message fields are available and service is connected throught the third-party service -->
+  <main>
+    <section class = "hero">
+      <h1><i class="fas fa-route"></i> Adventure awaits</h1>
+      <p>... Loose track of passage of time... Get lost in <span>adventure</span>...</p>
+      <a href="/register">JOIN US</a>
+    </section>
+
+    <section>
+      <div class="total">
+          <h2> About us</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum ut iste, rem officia pariatur excepturi beatae labore odio deserunt, ratione dignissimos accusamus velit id dolores illum mollitia, optio impedit provident ea ullam nulla nisi? Velit, dignissimos perspiciatis error earum eveniet incidunt maxime suscipit veritatis. Incidunt rem quidem dolore ad!</p>
+         
+        
+      </div>
+        <!-- <img src="img/lake.jpg" alt="picture of a boat on a lake"> -->
+    </section> 
+
+    <section>
+      <h2 id="destination">DESTINATIONS!</h2>
+      <div class="wrapper"></div>
+
+    </section>
+
+    <div class="form">
+      <h2 id="contact">CONTACT US</h2>
+      <ul>
+        <li>MAIN OFFICE
+          <ul>
+            <li> 403-200-7200</li>
+            <li> 100-310 Shawville Bld N.E., Calgary</li>
+          </ul>
+        </li>
+      </ul>
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xzbjjvyg" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="What's the fizz?" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer section  -->
+
+  <%- include ('./partials/footer-global'); %>
+
+  <%- include ('./partials/js-global'); %>    
+  
+
+  <!-- <script>
+    const toggle =document.querySelector('#toggle')
+   
+    const menu = document.querySelector('nav ul')
+
+    toggle.addEventListener('click', function(){
+    menu.classList.toggle('visible')
+    }) 
+  </script>       -->
+</body>
+</html>

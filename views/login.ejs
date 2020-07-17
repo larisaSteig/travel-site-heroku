@@ -1,0 +1,55 @@
+<%- include ( './partials/header'); %>
+    <link rel="stylesheet" href="css/login.css">
+<%- include ('./partials/css-global'); %>  
+</head>
+<body>
+<!-- Header consist of navbar and button.The button will appear on mobile device only (max-width 660px) to present hamburger menue -->
+    <header>
+        <h1 class="logo" ><i class="fas fa-route"></i><a href="/"> Adventure</a></h1>  
+          <nav class ="navigation">
+            <ul>
+                <li ><a href="/" >Home</a></li>
+                <li><a href="/#destination">Destination</a></li>
+                <li><a href="/#contact">Contact Us</a></li>
+                <li><a href="/login" class="active">Login</a></li>
+                <li><a href="/register">Sign Up</a></li>
+            </ul>
+            <button id="toggle"><i class="fas fa-bars"></i></button>
+          </nav>
+        
+      </header>
+<!-- LOGIN page consist of two input fields and label and belongs to class INNER ( the sam as in registration page)
+***** Password is required; email should be at least 6 letter********* -->
+      <main>
+          <section id="content">
+             <form>
+                 <h2>Login Form</h2>
+                    <div class ="inner">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="Email" id = "email" placeholder="you@example.com" required minlength="6">
+                        </div>   
+                        <div>       
+                            <label for="password">Password</label>
+                            <input type="password" name = "password" id="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </div>
+                    </div>
+                   
+                        <input type="submit" value ="Log in"/>
+                    <div class="question">
+                        <a href="#">Lost your password?</a>
+                        <a href="/register">Register</a>
+                    </div>
+                  
+            </form>
+        </section>
+    </main>
+
+    <%- include ('./partials/footer-global'); %>
+
+    <%- include ('./partials/js-global'); %> 
+
+ 
+</body>
+</html>
