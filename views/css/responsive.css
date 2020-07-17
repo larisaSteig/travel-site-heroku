@@ -1,0 +1,248 @@
+
+
+
+/**************************************** TABLET SIZE SCREEN *****************************************************/
+@media (max-width: 1120px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin:0;
+    }
+    
+     
+    .navigation {
+        width:100%;
+        justify-content:space-around;
+       
+        margin-bottom: 0;
+    }
+
+    .navigation ul {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1em;
+        color:#268545;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        
+    
+    }
+    .hero h1 {
+        margin: 5% 10% 0 0;
+        font-size: 2em;
+        color:#268545;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+        margin-right: 10%;
+        width: 25%;
+        color:#faa13c;
+    }
+
+    .hero a {
+        font: normal 15px 'Nunito Sans', sans-serif;
+        border: 1px solid #257C9E;
+        font-weight: 400;
+        margin-right: 15%;
+    }
+
+    
+   #contact {
+       margin-top: 0.5em;;
+   }
+    
+
+   /************* registration page *************/
+
+    .register {
+    
+        width:50vw;
+    }	
+
+
+    button:hover {
+        opacity:1;
+    }
+
+    sup {
+        color:red;
+    }
+
+    /**********gallery page************* */
+    .wrapper {
+        display: flex;
+      
+        width: 80%;
+      
+        margin:0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+      }
+
+      /* ***********footer************* */
+    footer {
+        position: absolute;
+        bottom:0;
+        width: 99.9%;
+        background-color: lightskyblue;
+        color: black;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid black;
+        text-transform: capitalize;
+        position:fixed;
+    }
+
+
+
+/**************************************** PHONE SIZE SCREEN ********************************************/
+
+@media (max-width: 680px) {
+
+    header {
+        flex-direction: row-reverse;
+        
+    }
+    .navigation {
+        width:100%;
+        justify-content:flex-start;
+        margin-bottom: 0;
+        position: relative;
+   
+
+
+    }
+    
+    .logo, .logo a{
+        display: flex;
+        margin-right: 0.5em;
+
+    }
+   
+    .hero p{
+         color:#faa13c;
+    }
+
+   
+    .navigation ul {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    nav ul {
+     
+        position: absolute;
+    
+        visibility:hidden;
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left:0;
+        
+            
+    }
+    
+    .navigation a {
+        display: block; 
+        padding: 0.5em;
+        left:0;
+        top:0;
+        font-size: 1.2em;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+       
+       
+     
+    }
+    
+    #toggle {
+        order:-1;
+        display:inline-block;
+        width: 50px;
+        height:50px;
+        background: orange;
+        line-height: 1.7;
+        color: green;
+       
+        
+       
+    }
+
+    .fa-bars{
+        width: 100%;
+        color:green;
+        float:right;
+    }
+
+    #content {
+        opacity:0.9;
+        width:300px;
+       
+     
+    }
+
+    #content input[type="submit"]{
+        margin:auto;
+    }
+
+    .register h1 {
+       
+        font: italic 20px 'Nunito Sans', sans-serif;
+    }
+    
+    .register p {
+        font: italic 1em 'Nunito Sans', sans-serif;
+    }
+    
+    .register label {
+        display: block;
+        color:#888;
+        margin-bottom: 15px;
+        font: 13px 'Nunito Sans', sans-serif;
+    }
+    
+    .inner {
+        padding: 10px;
+    }
+  
+    
+    .highlight {
+       
+        font-size: 15px;
+    }
+    .newsletter {
+        color:#888;
+        font-size: 15px;
+      
+    }
+    
+    input[type='submit'] {
+        font: normal 10px 'Nunito Sans', sans-serif;
+               
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    img {
+      width: 250px;
+      margin-right: 10px;
+    }
+   
+      
+    
+
+}

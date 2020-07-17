@@ -1,0 +1,32 @@
+/**************************************** RESET SET UP HEADER ***************************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(169, 197, 216), white);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* *************************************************************************************************************** */
+figure {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 80%;
+  height: 100vh;
+  margin-top: 5%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+
+figcaption span {
+  font-size: 2em;
+  color:#faa13c;
+}

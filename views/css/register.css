@@ -1,0 +1,121 @@
+/**************************************** RESET SET UP HEADER ***************************************************/
+body {
+    
+    background-image: url('../img/20180414_104808.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    min-height: 100vh
+   
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(169, 197, 216), white);
+    font-family: 'Nunito Sans', sans-serif;
+ 
+}
+
+
+
+/*
+ /********************************* REGISTRATION FORM ***********************************************************/
+.register {
+  
+    width:450px;
+	padding:30px;
+	margin:20px auto;
+	background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+ 
+   
+}
+
+.register h1 {
+    background: #2A88AD;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: italic 30px 'Nunito Sans', sans-serif;
+    
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+
+.register p {
+    font: italic 1em 'Nunito Sans', sans-serif;
+}
+
+.register label {
+    display: block;
+    color:#888;
+    margin-bottom: 15px;
+    font: 13px 'Nunito Sans', sans-serif;
+}
+
+.inner {
+    padding: 20px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display:block;
+    box-sizing: border-box;
+    width: 100%;
+	padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+input:invalid {
+    background-color: #ffdddd;
+}
+}
+.highlight {
+    font: normal 20px 'Nunito Sans', sans-serif;
+	color: #268545;
+	margin-bottom: 5px;
+}
+.newsletter {
+    color:#888;
+    font: normal 20px 'Nunito Sans', sans-serif;
+  
+}
+
+input[type='submit'] {
+    background: #faa13c;
+	padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    color: #268545;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Nunito Sans', sans-serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    opacity: 0.7;
+   
+}
+
+
+button:hover {
+    opacity:1;
+}
+
+sup {
+    color:red;
+}
+
+
+

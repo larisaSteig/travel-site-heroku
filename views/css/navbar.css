@@ -1,0 +1,100 @@
+/* *********************************RESET AND HEADER UPDATE*********************************************** */
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    
+ 
+}
+
+h1 a{
+    color: green;
+    font-family: 'Caveat', cursive;
+}
+
+/****************************************** NAVBAR ********************************************************/
+
+.navigation {
+    display: flex;
+    
+  }
+.logo {
+    margin: 0 0 0em 4em
+}
+.fa-route {
+    color:#faa13c;
+    font-size: 1em;
+}
+.logo, .navigation {
+ 
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.navigation a, .logo a {
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+  
+}
+
+.navigation ul {
+    display:flex;
+    list-style-type: none;
+    
+    
+
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    color:#268545;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+.navigation .active {
+ color: orange;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  
+}
+.navigation a:hover {
+    color:white;
+    background-color:#268545;
+    border-radius: 15%;
+}
+
+/* .navigation button {
+    display: none;
+} */
+
+#toggle{
+    display: none;
+}
+
+
+.visible {
+    visibility: visible;
+    background: white;
+    align-items: center;
+    height:100vh;
+    
+}
+
+/* ******************************************FOOTER*********************************** */
+footer {
+    position: absolute;
+    bottom:0;
+    width: 99.9%;
+    background-color: lightskyblue;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    position:fixed;
+}
