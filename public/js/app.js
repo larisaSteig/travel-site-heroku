@@ -1,6 +1,6 @@
 
 // OLD way to write the fetch function 
-fetch('http://localhost:3000/api/gallery')
+fetch('https://adventure-travel.herokuapp.com/api/gallery')
         .then(function (response) {
           return response.json()
         })
