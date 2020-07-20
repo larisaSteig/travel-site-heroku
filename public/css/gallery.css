@@ -8,8 +8,22 @@ header {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+/* **************************** Styling invalid page  */
 
-/* *************************************************************************************************************** */
+
+.invalid {
+  background-image: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ 
+ .invalid h1 {
+   margin-top: 15%;
+   text-align: center;
+ }
+ 
+ 
+/* *****************************************Styling each page individually********************************************************************** */
 figure {
   display: flex;
   flex-direction: column-reverse;
@@ -19,6 +33,7 @@ figure {
   margin: auto;
   justify-content: center;
   align-items: center;
+  order:1
 }
 
 figcaption {
@@ -29,4 +44,19 @@ figcaption {
 figcaption span {
   font-size: 2em;
   color:#faa13c;
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+.extra p {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }

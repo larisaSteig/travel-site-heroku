@@ -89,6 +89,44 @@
         flex-direction: column;
       }
 
+      /* *********extra individual page */
+
+      .extra {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .extra p {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25em;
+      }  
+    
+
+      figcaption {
+        font-size: 1.5em;
+        margin-bottom: 2%;
+        width: 100%;
+       
+      }
+      
+      figcaption span {
+        font-size: 1.5em;
+        color:#faa13c;
+      }
+      figure {
+        display: flex;
+        flex-direction: column-reverse;
+        /* width: 80%; */
+        height: 50vh;
+        margin-top: 0;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        order:-1
+      }
+
       /* ***********footer************* */
     footer {
         position: absolute;
@@ -242,7 +280,9 @@
       margin-right: 10px;
     }
    
-      
+    .extra p {
+      font-size: 1.0em;
+      }  
     
 
 }
