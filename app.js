@@ -30,6 +30,11 @@ db.once('open', function() {
 const app = express();
 app.set('view engine', 'ejs');
 
+// create set up for moment module for footer
+
+const yearFormat="MMM Do YYYY"
+app.locals.moment = moment;
+app.locals.yearFormat = yearFormat;
 // automatically check if requested file is found in /public
 // if yes, return that file as a response to the browser
 app.use(express.static(path.join(__dirname, 'public')));
