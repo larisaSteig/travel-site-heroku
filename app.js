@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
+const moment = require('moment');
 
 const Gallery = require('./models/imageGal.js')
 
@@ -28,13 +29,6 @@ db.once('open', function() {
 // create express app
 const app = express();
 app.set('view engine', 'ejs');
-
-// cors origin URL - Allow inbound traffic from origin
-corsOptions = {
-  origin: "https://dashboard.heroku.com",
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-app.use(cors(corsOptions));
 
 // automatically check if requested file is found in /public
 // if yes, return that file as a response to the browser
@@ -64,8 +58,8 @@ app.get('/:id', function(request, response){
   Gallery.findOne({'id': request.params.id}, function(error, image) {
   
     // Check for IDs that are not in our list
-    if (!image) {
-      return response.send('Invalid ID.');
+    if(!image) {
+      response.render('invalid')
     }
 
     // Compile view and respond
@@ -82,21 +76,10 @@ app.get('/api/gallery', function(request, response){
 })
 
 
-
-
-// app.get('/:id', function (request,response){
- 
-//   const oneImage = gallery.find(function(item){
-//     return item.id == request.params.id
-   
-//   });
- 
-//   response.render('extra',oneImage)
-// })
 // // if no file or endpoint found, send a 404 error as a response to the browser
 app.use(function(req, res, next) {
   res.status(404);
-  res.send('404: File Not Found');
+  res.render('invalid');
 });
 
 // start up server
