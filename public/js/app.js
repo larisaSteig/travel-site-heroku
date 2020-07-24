@@ -32,13 +32,7 @@ fetch('https://adventure-travel.herokuapp.com/api/gallery')
                 
         });
         
-        const toggle =document.querySelector('button')
-        const menu = document.querySelector('nav ul')
-          
-        toggle.addEventListener('click', function(){
-        menu.classList.toggle('visible')
-})
-
+       
 //  New way to write the same function as above
       // fetch('http://example.com/songs')
       //   .then(response => response.json())
