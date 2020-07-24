@@ -4,18 +4,9 @@
 </head>
 <body>
      <!-- Header consist of navbar and button.The button will appear on mobile device only (max-width 660px) to present hamburger menue -->
-  <header>
-       <nav class ="navigation">
-        <ul>
-          <li ><a href="/" class="active">Home</a></li>
-          <li><a href="/#destination">Destination</a></li>
-          <li><a href="/#contact">Contact Us</a></li>
-          <li><a href="/login">Login</a></li>
-          <li><a href="/register">Sign Up</a></li>
-        </ul>
-        <button id="toggle"><i class="fas fa-bars"></i></button>
-      </nav> 
-  </header>
+<header>
+   <%- include ('./partials/navbar'); %>
+</header>
 
 <!-- *** There are few section in main body :  1. Hero section: picture with logo and ability to register to the services 
   ****** 2. In class DESCRIPTION  there is a little bit information about our company and CONTACT information 
@@ -74,16 +65,6 @@
   <%- include ('./partials/footer-global'); %>
 
   <%- include ('./partials/js-global'); %>    
-  
 
-  <!-- <script>
-    const toggle =document.querySelector('#toggle')
-   
-    const menu = document.querySelector('nav ul')
-
-    toggle.addEventListener('click', function(){
-    menu.classList.toggle('visible')
-    }) 
-  </script>       -->
 </body>
 </html>

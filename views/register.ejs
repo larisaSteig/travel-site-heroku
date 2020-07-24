@@ -7,19 +7,8 @@
     <!-- Header consist of navbar and button.The button will appear on mobile device only (max-width 660px) to present hamburger menue -->
     <header>
         <h1 class="logo" ><i class="fas fa-route"></i><a href="/"> Adventure</a></h1>  
-          <nav class ="navigation">
-            <ul>
-                <li ><a href="/" >Home</a></li>
-                <li><a href="/#destination">Destination</a></li>
-                <li><a href="/#contact">Contact Us</a></li>
-                <li><a href="/login" >Login</a></li>
-                <li><a href="/register" class="active">Sign Up</a></li>
-            </ul>
-            <button id="toggle"><i class="fas fa-bars"></i></button>
-          </nav>
-        
-      </header>
-
+        <%- include ('./partials/navbar'); %>
+    </header>
      <!-- Main body: registration form. Form consist of class = HIGHLIGHT ( to let user know what field is about) and INNER ( actual label/ input type to fill in)
     ****** Password has certain rules and client knows about it through the title 
     ****** All the fields are required -->
